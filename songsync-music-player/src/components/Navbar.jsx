@@ -1,9 +1,9 @@
+import logo from "../assets/songsync-logo.png";
+
 function Navbar() {
   return (
     <nav className="flex justify-between items-center px-6 py-4 bg-white shadow-sm">
-      <h1 className="text-xl font-bold text-blue-600">
-        Songsync
-      </h1>
+      <img className="w-20" src={logo} alt="Songsync Logo" />
 
       <ul className="hidden md:flex gap-6 font-medium text-gray-700">
         <li className="cursor-pointer hover:text-blue-600">Artist</li>
