@@ -5,7 +5,8 @@ export const searchSongs = async (query = "pop") => {
     );
 
     const data = await response.json();
-    return data.data;
+
+    return data.data.slice(0, 12);
   } catch (error) {
     console.error("Error fetching songs:", error);
     return [];

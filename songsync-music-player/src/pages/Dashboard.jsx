@@ -8,7 +8,7 @@ function Dashboard() {
 
   useEffect(() => {
     const fetchSongs = async () => {
-      const results = await searchSongs("pop");
+      const results = await searchSongs("burna");
       setSongs(results);
     };
 
